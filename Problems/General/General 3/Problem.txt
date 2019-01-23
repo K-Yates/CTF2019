@@ -1,0 +1,2 @@
+Connect to challenge.acictf.com on port 31802
+Good Luck

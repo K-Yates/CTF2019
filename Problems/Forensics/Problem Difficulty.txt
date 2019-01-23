@@ -1,0 +1,12 @@
+Easy:
+	1
+	5
+	6
+	
+Medium:
+	3
+	7
+	
+Difficult:
+	2
+	4
