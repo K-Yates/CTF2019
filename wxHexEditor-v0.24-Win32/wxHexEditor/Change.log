@@ -1,0 +1,203 @@
+wxHexEditor v0.24 Beta  31/12/2017
+Fixed many critical bugs and assertions. (Thanks Mikhail Kasimov for Beta testing.)
+Fixed MacOSX dialog crashes and make OSX version usable again.
+Added Windows Disk & Partition raw write.
+Added TAG redo/undo support.
+Added Portable mode support.
+Added Clang compilation support.
+Added space check and error check while saving.
+Added "+Offset-" byte shifting feature.
+Added TAG remove with right click at TAG panel. 
+Added Preferences dialog save on change for example on font sizes.
+Added Quick and Normal Tag creation shortcuts.
+
+wxHexEditor v0.23 Beta  04/12/2014
+Added many languages!
+Fixed many bugs that leads to crash and memory leaks.
+Implemented prefetched functions. (SSD buster!)
+Fixed some cosmetic errors.
+Fixed C::B compilation for all OS'es.
+Added Sorted Tag Saving / Loading.
+Fixed Injection function.
+Implemented file change detection reload ( on wxWidgets > 2.9 )
+Implemented file compare connector to scroll 2 files at once.
+Added remember last panel states.
+Fixed TagEdit enabling code for addesses > 0xFFFFFFFFh.
+Added MultiSearchAtBinary function, allows faster search on FindAll.
+Fixed logical sectors start. Now starts from 0 instead of 1.
+Added AutoShowTag option to preferences menu.
+Added auto tag panel popup with Process RAM open.
+Fixed Process RAM seeking.
+Added Report a Bug & Donation menu items :)
+Find Some Bytes button doesn't close find dialog anymore.
+
+wxHexEditor v0.22 Beta  09/05/2013
+Implemented auto tag panel popup with Process RAM open.
+Fixed Process RAM seeking.
+Added Bug Reporting menu item.
+Fixed LLVM-Clang compilation.
+Added another killer feature : donation menu item.
+Find Some Bytes button doesn't close find dialog anymore.
+Replaced default font to DOS OEM CP437.
+Implemented auto preview feature for font size changes.
+Fixed MacOSX "Find" wxMessageBox stall with work-a-round.
+Fixed SaveAS for files that have filesize changes.
+Added gksu and gksudo support.
+Changed file pick filters from *.* to *
+Implemented EUC-KR, Big5, AtariST, UTF8, UTF16, UTF32, Unicode, Shift JIS, Macintosh encodings.
+Implemented EBCDIC IBM Codepage 500, 875 and 1026 all other PC/DOS Codepages.
+Implemented Iran System,Mozevia and Kamanicky Encodings.
+Implemented Font Size change option.
+Implemented Font Families for categorization encoding schemas.
+Implemented MIK, KOI7, TSCII, VSCII,EBCDIC CP037,285,1047,ANSEL, ISO/IEC 8859-1, DOS CP850, All Windows CP125x encodings, GB2312, Macintosh Roman CP10000 Encoding.
+Implemented Mac Windows codepages and ISO8859-16, KZ-1048, EBCDIC 474, CP1006.
+Implemented preferences codepage selection, ANSI,OEM,ASCI
+Added Gentoo patches from DirtyEpic. (Thanks)
+Implemented Bytes Per Line Limit.
+Fixed text panel that broken at last revision.
+Added non-compleeted Russian translation.(Thanks to Nikolai Novikov)
+Added --compare flag for CLI startup.
+Fixed restore main window at full screen state on opening.
+
+wxHexEditor v0.21 Beta  01/01/2013
+Imported new udis86 version with SSSE3 and some SSE4.1 support.
+Fixed opening hdd drives from linux shell.
+Implemented Disk Backup/Restore & Erase tools.
+Added custom hex area formating.
+Implemented Multi Language support with TURKISH locale.
+Added Preferences menu.
+Fixed saveasdump 0A -> 0D 0A conversion on windows.
+Improved file speed gauges.
+Added Thin Seperation Lines at Process Memory Map boundries.
+ReImplemented TagElement::Compare function for big offsets.
+Added Auto TAG regeneration from /proc/<pid>/maps file.
+Added Argument for open processes: -pid:<pid_number>
+Added Feature on Linux : Open Process RAM
+Fixed Export TAGs ".tags.tags" issue.
+
+wxHexEditor v0.20a Beta  14/11/2012
+Fixed Hex Panel input issue.
+
+wxHexEditor v0.20 Beta  29/02/2012
+Added OS types to program title.
+Fixed Backward/Forward search/replace gauge calculation with wrap around option.
+Removed some unneccessary event trigging from keyboard input, speeds up cursor a bit.
+Automated setting offset_scroll values at HexEditorCtrl::ReadFromBuffer.
+Added Clear button to Search Panel.
+Fixed Replace doesn't update UNDO
+Added better formatting to checksum result.
+Added copy checksum result to clipboard.
+Removed StatusBar Cursor Offset zeros from beginning.
+Fixed Tag offset show broken for big offsets at panel.
+Fixed Keyboard move break selection.
+Implemented native like selection on Text Control.
+Fixed Keyboard selection delay.
+Fixed Checksum file detection on custom file picks.
+Fixed comparison operation for MSW
+Added Debug Frame for redirecting MSW stdout. (Enabled via _DEBUG_ definition.)
+Added "Smart Escape" feature to GoTo dialog. Now escape clears current active field. If escape pressed on clear field, closes the dialog.
+Fixed Go to Dialog illegal key position walking on MSW.
+Fixed clearing all tag/search/compare panels on close of file.
+Fixed default positioning of Data Interpreter Panel at Win/OSX
+Disabled Win Devices that we cannot open currently
+Search speed up, also for Unicode UTF8 search.
+Added OpenMP libs flags to makefile. OpenMP still req OPTFLAGS="-fopenmp".
+Fixed Compare operation, Stop after N match counts merged diffs as 2.
+Added random color Quick TAG creation without info.
+Fixed Offset Scroll usage for lines instead of pages.
+Show sectors via thin red line for Disk access
+Added Previous & Next Sector buttons to GOTO dialog.
+Silenced some compilation warnings.
+Fixed parallel make.
+Added cancel button to Find/Replace dialog.(We don't like GNOME3)
+Rendering speedup.
+Implemented Find/Replace Dialog reverse search option.
+Allowed operation without offset control.
+Allowed Hex editor alone operation.
+Allowed Text editor alone operation.
+Added LBA adressing mode, Sector+Offset support.
+Fixed XORView key entry for OSX/WIN
+Added Import & Export TAGs support.
+Added Octal offset support.
+Added Compare: merge sections feature.
+Added stack overflow issues on CompareDialog::Compare().
+Fixed Notepad file selections undo/redo disabling.
+Added some cross-compile helper to makefile.
+Implemented Fill Selection function.
+Added Save as Dump for saving selection as a file.
+Added some help strings into menubar.
+Disabled paste operation if selection is true.
+Changed empty tags, now shown as Tag's Number + Offset at TagPanel.
+Added CTRL+G shortcut to" Go to Offset" dialog.
+Changed Goto Offset as Go to Offset.
+Changed default PREFIX to /usr/local
+Updated home url and mail
+Implemented Find Some Bytes button to find dialog.
+Fixed cursor misslocation on text/hex input at end of the screen.
+Fixed minus sector count at at InfoPanel.
+Fixed XORView check on file selections.
+Added Hexadecimal key support at XORView dialog.
+Added old value memory to all dialogs.
+Replaced hash calculation init with for looped one.
+Added MD/RIPEMD/SHA/TIGER/HAVAL/CRC/ADLER/GOST/WHIRLPOOL/SNEFRU checksum
+functions.
+Added OpenMP acceleration to Checksum calculation.
+Added Devices SubMenu categorization.
+Changed file progress block sizes from 1MB to 128KB.
+Added mhash library for checksum calculations.
+Dropped Hashlib++ due some licenses in included files.
+Implemented CopyAs Dialog remembers old values.
+Changed CopyAs HTML Tags <code> tags with <span>...
+Added CopyAs Format WiKi and WiKi with TAGs.
+Added CopyAs Dialog Byte Per Line option.
+Added Offset/Hex/Text part options for CopyAs functions.
+Implemented HTML with TAGs Support. Hey this looks good!
+Implemented CopyAs Internet HTML and phpBB forum functions.
+Implemented CopyAs BigEndian support. 
+Implemented CopyAs Text/Hex/C/C++ and ASM (Without BigEndian and HTML
+support)
+Added C/C++ type hex paste input.
+Fixed unmatched case text search.
+Fixed saveAs corruption due progress bar.
+Fixed error message typo.
+Fixed Compare Dialog result corruption for bigger than MB files.
+Fixed slow ASCI Text find.
+Added speed indicator to search progress gauges.
+Added speed indicator to hash progres dialog.
+Fixed File comparison dialog error for < 1 MB files.
+Fixed MacOSX File:Quit menu bug while file was open.
+
+wxHexEditor v0.11 Beta	17/06/2011
+Now program became from pre-Beta stage to Beta stage.
+Added Progress dialogs for file save, comparison and checksum dialogs.
+Fixed GoTo dialog and uint64_t to String conversions on MSW.
+Fixed Device menu show bug.
+Added no device information for Windows.
+Fixed compilation error on PuppyLinux.
+Fixed undo commit bug at Direct mode(Thanks guerrier for indicating bug)
+Added file owner change for automated disk access on Linux/Unix.
+Added Auto-Offset resizing by file length.
+Changed Offset Hex:Dec switching by right mouse button from now.
+Added left click to offset area copies the address.
+Implemented Checksum Dialog core with MD5 & SHA family
+Implemented Disassembler panel code by using udis86 library.(Beta)
+Implemented UTF8/Unicode searching.
+Implemented File Compare option.
+Removed "(Alpha)" keyword on right click menus.
+And Many bug fixes...
+
+wxHexEditor v0.10 Pre-Beta 19/03/2011
+Added M$ Windows partition detection and disk access code. Thanks Charilaos Skandylas.
+Added MacOSX device path recognition.
+Added Unique Feature : Insertion & Deletion without creating tempfile.
+Added XORView (r) feature to read/write XOR encrypted files on the fly.
+Added bit change ability to data interpreter panel.
+Added Open Recent File facility.
+Fixed font issues with wxOSX 2.9.x
+Added Blocky Read/Write code.
+Implemented FinAll and ReplaceAll functions.
+Added Progress gauge to FindAll function.
+Added Highlighting mechanizm for FindAll.
+Added Sector Size and Count for block device informations.
+Removed multiple "File cannot open!" warnings.
+Fixed bugs, washed codes and much more...
