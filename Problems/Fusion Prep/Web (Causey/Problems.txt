@@ -1,0 +1,27 @@
+Please dont look these up unless you really get stuck
+
+http://2018shell2.picoctf.com:35349
+
+http://2018shell2.picoctf.com:55790
+
+http://2018shell2.picoctf.com:5477
+
+http://2018shell2.picoctf.com:52135
+
+http://2018shell2.picoctf.com:40064
+
+http://2018shell2.picoctf.com:14664
+
+http://2018shell2.picoctf.com:46162
+ 
+http://2018shell2.picoctf.com:44730
+ 
+http://2018shell2.picoctf.com:64349
+
+http://2018shell2.picoctf.com:17593
+
+http://2018shell2.picoctf.com:53126
+
+http://2018shell2.picoctf.com:15987
+
+https://problems.metactf.com/content/blindcameras/
